@@ -1,0 +1,150 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+  margin: 50px 50px 0px 50px;
+  background-color: #FaF9F6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.main {
+  flex: 1;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.menu-bar {
+  list-style-type: none;
+  float: right;
+  padding: 0;
+  background-color: #FAF9F6;
+}
+
+.menu-bar ul {
+  padding: 0;
+}
+
+.menu-bar li {
+  display: inline-block;
+}
+
+.menu-bar a {
+  padding: 0.3rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.active-tab {
+  border-bottom: #FFB962 solid 3px;
+  border-radius: 10px;
+}
+
+.menu-bar a:hover {
+  background-color: #FFB962;
+  color: #FAF9F6;
+  border: #FFB962 3px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+span {
+  color: #FFB962
+}
+
+.warning {
+  font-size: 3rem;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.card .tile-image {
+  height: 400px;
+  width: 400px;
+  border-radius: 20%;
+  margin-left: 20%;
+  object-fit: cover;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+@media (max-width: 1079px) {
+  .card .tile-image {
+    margin-left: 10%;
+  }
+}
+
+/* start of large tablet styles */
+@media (max-width: 991px) {
+  .logo {
+    width: 7rem;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+  }
+
+  .card .tile-image {
+    margin-left: 25%;
+  }
+
+  .card .card-title, .card-text {
+    margin-left: 10%;
+    
+  }
+
+  .card .card-text {
+    margin-bottom: 50px;
+  }
+}
+
+/* start of medium tablet styles */
+@media (max-width: 784px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .card .tile-image {
+    height: 300px;
+    width: 300px;
+    margin-left: 30%;
+  }
+
+  .card .card-title, .card-text {
+    margin-left: 0;
+  }
+}
+
+  /* start of phone styles */
+  @media (max-width: 479px) {
+    h1 {
+      font-size: 2.75rem;
+    }
+    
+    .card .tile-image {
+      margin-left: 20%;
+      height: 250px;
+      width: 250px;
+    }
+}
